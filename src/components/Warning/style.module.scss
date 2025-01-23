@@ -1,0 +1,32 @@
+.warning {
+	display: none;
+}
+
+@media screen and (max-width: 769px) {
+	.warning {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+		text-align: center;
+		width: 100%;
+		height: 100px;
+		background: #0024ee;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		padding: 4px;
+		z-index: 2;
+
+		button {
+			background: none;
+			border: none;
+			color: white;
+			font-size: 22px;
+			cursor: pointer;
+			padding-block: initial;
+			padding-inline: initial;
+		}
+	}
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Tilt+Warp&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #bfc8e0;
+  --secondary-color: #99a7c0;
+  --primary-color-dark: #bfc8e060;
+}
+
+.tilt-warp {
+  font-family: "Tilt Warp", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "XROT" 0, "YROT" 0;
+}
+
+body {
+  font-family: "Overpass Mono", serif;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  background: rgb(31, 31, 31);
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: inherit;
+}
+
+p {
+  display: block;
+  margin-block-start: initial;
+  margin-block-end: initial;
+}
+
+a:-webkit-any-link {
+  position: relative;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.06em;
+  bottom: 0;
+  left: 0;
+  background: currentcolor;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(top, #586aa0 0%, #101741 100%);
+}
+
+.page {
+  width: 100%;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .layout {
+    padding: 0px 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .layout {
+    padding: 0px 30px;
+  }
+}
+/*
+@media screen and (max-width: 575px) {}
+@media screen and (max-width: 769px) {}
+@media screen and (max-width: 990px) {}
+@media screen and (min-width: 1200px) {}
+*//*# sourceMappingURL=style.css.map */

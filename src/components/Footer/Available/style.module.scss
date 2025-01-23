@@ -1,0 +1,29 @@
+.available__action {
+	position: absolute;
+	top: -60px;
+	right: -100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 160px;
+	height: 24px;
+	padding: 12px;
+	background: #00000050;
+	backdrop-filter: blur(5px);
+	border: 1px solid #ffffff20;
+	border-radius: 10px;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+
+	a {
+		padding-top: 2px;
+	}
+}
+
+.visible {
+	opacity: 1;
+}
+
+.hidden {
+	opacity: 0;
+}

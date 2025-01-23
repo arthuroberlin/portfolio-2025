@@ -1,0 +1,12 @@
+.datetime__wrapper {
+  display: flex;
+  gap: 12px;
+}
+.datetime__wrapper span {
+  text-transform: uppercase;
+}
+@media screen and (max-width: 575px) {
+  .datetime__wrapper {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.module.css.map */

@@ -1,0 +1,29 @@
+.available__action {
+  position: absolute;
+  top: -60px;
+  right: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 24px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.3137254902);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1254901961);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.available__action a {
+  padding-top: 2px;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}/*# sourceMappingURL=style.module.css.map */

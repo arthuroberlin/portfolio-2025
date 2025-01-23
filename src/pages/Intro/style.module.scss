@@ -1,0 +1,147 @@
+.page__custom {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	padding-top: 60px;
+}
+// ---------- DATE + NAME ---------- //
+
+.dateTime__container {
+	padding-left: 20%;
+}
+
+.myName {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	height: 26vw;
+
+	font-size: 24vw;
+	text-transform: uppercase;
+
+	margin-top: -50px;
+
+	.square {
+		display: block;
+		margin-right: 5px;
+		margin-bottom: 25px;
+
+		width: 43px;
+		height: 43px;
+
+		background: var(--secondary-color);
+	}
+}
+
+// ---------- _____ ---------- //
+
+// ---------- MY INFORMATIONS ---------- //
+
+.resume__container {
+	padding-right: 300px;
+	padding-top: 20px;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	ul li {
+		text-transform: uppercase;
+	}
+}
+
+.stacks__container {
+	display: flex;
+	padding-top: 20px;
+	margin-left: 5%;
+
+	ul li {
+		text-transform: uppercase;
+	}
+}
+
+// ---------- _____ ---------- //
+
+@media screen and (max-width: 1200px) {
+	.dateTime__container {
+		padding-top: 20px;
+		padding-left: 0;
+	}
+
+	.myName {
+		margin-top: 0px;
+		font-size: 20vw;
+		justify-content: space-around;
+		.square {
+			margin-right: 0;
+			margin-bottom: 25px;
+
+			width: 23px;
+			height: 23px;
+		}
+	}
+
+	.resume__container {
+		padding-right: 100px;
+	}
+
+	.stacks__container {
+		padding-top: 20px;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.myName {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-height: 875px) {
+	.content {
+		padding-top: 20px;
+	}
+
+	.myName {
+		height: 24vw;
+	}
+
+	.resume__container {
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-height: 775px) {
+	.resume__container {
+		padding-top: 10px;
+	}
+}
+
+@media screen and (max-height: 725px) {
+	.stacks__container {
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width: 575px) and (max-height: 775px) {
+	.stacks__container {
+		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.myName {
+		padding-top: 20px !important;
+	}
+
+	.resume__container {
+		justify-content: flex-start;
+		padding-top: 40px;
+		padding-right: 0px !important;
+	}
+}
