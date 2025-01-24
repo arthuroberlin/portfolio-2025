@@ -81,6 +81,13 @@
 	}
 }
 
+@media screen and (max-height: 775px) {
+	#footer {
+		padding-top: 0px;
+		gap: 20px;
+	}
+}
+
 @media screen and (max-width: 575px) {
 	.bottom__part {
 		ul {

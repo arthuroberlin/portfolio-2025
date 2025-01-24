@@ -14,9 +14,9 @@ createRoot(document.getElementById("root")!).render(
 		<Background />
 		<BrowserRouter>
 			<Routes>
-				<Route path="*" element={<Error />} />
 				<Route path="/" element={<Intro />} />
 				<Route path="/gettoknowme" element={<GetToKnowMe />} />
+				<Route path="*" element={<Error />} />
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>
