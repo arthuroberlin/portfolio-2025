@@ -13,7 +13,7 @@ const Available = () => {
 			setIsRendered(true);
 			setTimeout(() => setVisible(true), 100); //delay
 			clearTimeout(timeoutId);
-			timeoutId = setTimeout(() => setVisible(false), 2000);
+			timeoutId = setTimeout(() => setVisible(false), 2000); // time before hiding
 		};
 
 		availableBlock?.addEventListener("mouseover", handleMouseOver);
@@ -38,7 +38,7 @@ const Available = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Message me here!
+					Message me here! :)
 				</a>
 			</div>
 		)

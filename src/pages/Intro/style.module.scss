@@ -42,12 +42,15 @@
 // ---------- MY INFORMATIONS ---------- //
 
 .resume__container {
-	padding-right: 300px;
-	padding-top: 20px;
-
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+
+	padding-right: 300px;
+	padding-top: 40px;
+
+	font-size: 15px;
+	opacity: 0.8;
 
 	ul li {
 		text-transform: uppercase;
@@ -58,6 +61,8 @@
 	display: flex;
 	padding-top: 20px;
 	margin-left: 5%;
+	font-size: 15px;
+	opacity: 0.8;
 
 	ul li {
 		text-transform: uppercase;
